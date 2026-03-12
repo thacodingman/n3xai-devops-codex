@@ -1,0 +1,43 @@
+/root/n3xai-devops
+├── DEBIAN
+│   ├── control
+│   ├── postinst
+│   ├── postrm
+│   ├── preinst
+│   └── prerm
+├── README.fr.md
+├── README.md
+├── build.sh
+├── etc
+│   └── n3xai
+│       ├── env.conf
+│       └── env.conf.example
+├── git-setup.sh
+├── opt
+│   ├── bootstrap
+│   │   ├── docker-registry.sh
+│   │   ├── postgresql.sh
+│   │   ├── ssh-hardening.sh
+│   │   └── users.sh
+│   └── n3xai
+│       └── setup-devops
+│           ├── 01-base-system.sh
+│           ├── 02-docker-engine.sh
+│           ├── 03-codex-cli.sh
+│           ├── 04-mcp-tools.sh
+│           ├── 05-mcp-generator.sh
+│           └── 06-mcp-orchestrator.sh
+├── root
+│   └── mcp
+│       └── registry
+│           └── registry.json
+└── usr
+    └── local
+        └── bin
+            ├── create-mcp-server
+            ├── mcp-dockerize
+            ├── mcp-from-openapi
+            ├── mcp-register
+            └── n3xai-install
+
+14 directories, 27 files

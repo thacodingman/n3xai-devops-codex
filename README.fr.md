@@ -128,8 +128,8 @@ Depuis la racine du workspace parent:
 
 ```bash
 cd /root
-./n3xai-devops/build.sh
-sudo dpkg -i n3xai-devops.deb
+./n3xai-devops-codex/build.sh
+sudo dpkg -i n3xai-devops-codex.deb
 ```
 
 Puis lancer:

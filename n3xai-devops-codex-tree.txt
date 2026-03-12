@@ -1,4 +1,4 @@
-/root/n3xai-devops
+/root/n3xai-devops-codex
 ├── DEBIAN
 │   ├── control
 │   ├── postinst
@@ -8,11 +8,14 @@
 ├── README.fr.md
 ├── README.md
 ├── build.sh
+├── deb
+│   └── n3xai-devops-codex.deb
 ├── etc
 │   └── n3xai
 │       ├── env.conf
 │       └── env.conf.example
 ├── git-setup.sh
+├── n3xai-devops-codex-tree.txt
 ├── opt
 │   ├── bootstrap
 │   │   ├── docker-registry.sh
@@ -40,4 +43,4 @@
             ├── mcp-register
             └── n3xai-install
 
-14 directories, 27 files
+15 directories, 29 files

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKG=n3xai-devops
+PKG=n3xai-devops-codex
 
 dpkg-deb --build $PKG
 

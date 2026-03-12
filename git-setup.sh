@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GITHUB_USER=thacodingman
-REPO=n3xai-devops
+REPO=n3xai-devops-codex
 
 git init
 

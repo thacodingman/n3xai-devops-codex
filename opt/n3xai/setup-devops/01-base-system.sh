@@ -15,7 +15,7 @@ build-essential \
 software-properties-common \
 apt-transport-https \
 ca-certificates \
-lsb-release
+lsb-release \
 gnupg
 
 echo "Base system installed."

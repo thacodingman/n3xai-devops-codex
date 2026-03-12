@@ -1,0 +1,63 @@
+#!/bin/bash
+
+BASE="/opt/n3xai/setup-devops"
+
+clear
+
+echo "===================================="
+echo "N3XAI DevOps Installer"
+echo "===================================="
+
+echo "1) Base System"
+echo "2) Docker Engine"
+echo "3) Codex CLI"
+echo "4) MCP Tools"
+echo "5) MCP Generator"
+echo "6) MCP Orchestrator"
+echo "7) Full Install"
+echo "0) Exit"
+
+read -p "Select option: " option
+
+case $option in
+
+1)
+bash $BASE/01-base-system.sh
+;;
+
+2)
+bash $BASE/02-docker-engine.sh
+;;
+
+3)
+bash $BASE/03-codex-cli.sh
+;;
+
+4)
+bash $BASE/04-mcp-tools.sh
+;;
+
+5)
+bash $BASE/05-mcp-generator.sh
+;;
+
+6)
+bash $BASE/06-mcp-orchestrator.sh
+;;
+
+7)
+
+bash $BASE/01-base-system.sh
+bash $BASE/02-docker-engine.sh
+bash $BASE/03-codex-cli.sh
+bash $BASE/04-mcp-tools.sh
+bash $BASE/05-mcp-generator.sh
+bash $BASE/06-mcp-orchestrator.sh
+
+;;
+
+0)
+exit
+;;
+
+esac

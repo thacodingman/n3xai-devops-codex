@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+echo "N3XAI DevOps installed."
+
+chmod +x /usr/local/bin/n3xai-install
+
+echo ""
+echo "Run the installer with:"
+echo ""
+echo "n3xai-install"
+echo ""
+
+exit 0

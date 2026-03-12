@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+echo "Preparing N3XAI DevOps installation..."
+
+exit 0

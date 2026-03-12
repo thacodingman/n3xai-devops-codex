@@ -1,0 +1,10 @@
+Package: n3xai-devops
+Version: 1.0
+Section: admin
+Priority: optional
+Architecture: all
+Maintainer: N3xAI
+Description: N3xAI DevOps Infrastructure Bootstrap
+ Installs Docker, MCP tools, Codex CLI, PostgreSQL setup,
+ system hardening and MCP orchestration environment.
+

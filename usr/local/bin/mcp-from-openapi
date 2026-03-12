@@ -1,0 +1,27 @@
+#!/bin/bash
+
+URL=$1
+NAME=$2
+
+BASE=/root/mcp/servers/$NAME
+
+mkdir -p $BASE
+
+curl -L $URL -o $BASE/openapi.json
+
+cat <<EOF > $BASE/server.py
+import json
+import sys
+
+def main():
+
+    for line in sys.stdin:
+        req=json.loads(line)
+
+        print(json.dumps({"status":"stub"}),flush=True)
+
+if __name__=="__main__":
+    main()
+EOF
+
+echo "MCP server created from OpenAPI."

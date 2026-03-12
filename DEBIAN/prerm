@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+echo "Removing N3XAI DevOps..."
+
+exit 0

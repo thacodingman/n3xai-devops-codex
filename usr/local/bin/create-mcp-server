@@ -1,0 +1,25 @@
+#!/bin/bash
+
+read -p "Server name: " NAME
+
+BASE="/root/mcp/servers/$NAME"
+
+mkdir -p $BASE
+
+cat <<EOF > $BASE/server.py
+import sys
+import json
+
+def main():
+
+    for line in sys.stdin:
+
+        req=json.loads(line)
+
+        print(json.dumps({"status":"ok"}),flush=True)
+
+if __name__=="__main__":
+    main()
+EOF
+
+echo "Server created: $BASE"

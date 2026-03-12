@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NAME=$1
+PATH_SERVER=$2
+
+REG=/root/mcp/registry/registry.json
+
+jq ".servers += [{\"name\":\"$NAME\",\"path\":\"$PATH_SERVER\"}]" $REG > /tmp/mcp-registry.json
+
+mv /tmp/mcp-registry.json $REG
+
+echo "MCP server registered: $NAME"
